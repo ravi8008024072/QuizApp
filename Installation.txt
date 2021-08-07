@@ -1,1 +1,37 @@
+Getting Started:
+================
 
+git clone https://github.com/ravi8008024072/QuizApp.git
+(Note:better to create & activate virualenv here)
+cd QuizApp
+pip install -r requirements.txt
+cd Quiz
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
+Create the virtualenv:
+----------------------
+Linux:
+------
+sudo apt-get install python-pip
+pip install virtualenv
+virtualenv --version
+virtualenv virtualenv_name
+Activate:
+source virtualenv_name/bin/activate
+Deactivate:
+deactivate
+(Note: If you want to create a virtualenv for specific python version, type)
+virtualenv -p /usr/bin/python3 virtualenv_name
+OR
+virtualenv -p /usr/bin/python2.7 virtualenv_name
+
+Windows:
+--------
+pip install virtualenv
+virtualenv virtualenv_name
+Activate:
+virtualenv_name\Scripts\activate
+Deactivate:
+deactivate
